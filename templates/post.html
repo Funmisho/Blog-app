@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Sets character encoding for the document -->
+    <title>{{ title }}</title>  <!-- Sets the title of the post page using the post title -->
+</head>
+<body>
+    <h1>{{ title }}</h1>  <!-- Displays the title of the post as the main heading -->
+    <div>{{ content|safe }}</div>  <!-- Displays the post content in HTML format; '|safe' prevents auto-escaping -->
+</body>
+</html>

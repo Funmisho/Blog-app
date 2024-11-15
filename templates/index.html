@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Sets character encoding for the document -->
+    <title>My Blog</title>  <!-- Sets the title of the homepage -->
+</head>
+<body>
+    <h1>My Blog</h1>  <!-- Main heading for the blog homepage -->
+    {% for post in posts %}  <!-- Loop through each post title in the posts list -->
+    <h2><a href="/posts/{{ post }}">{{ post.capitalize() }}</a></h2>  <!-- Link to the individual post page -->
+    {% endfor %}  <!-- End of loop -->
+</body>
+</html>
